@@ -48,27 +48,41 @@
 // }
 //! 2: Write a program to check if a number is prime.
 
-let num = 7;
-let count;
-for(let i = 2;i<=num;i++){
-     count = 0;
-    for(let j = 1; j <=i; j++){
-        if(i %j === 0){
-            count++;
-        }
-    }
-}
-if(count===2){
-    console.log("Number is Prime")
-}
-else{
-    console.log("Number is not Prime")
-}
+// let num = 7;
+// let count;
+// for(let i = 2;i<=num;i++){
+//      count = 0;
+//     for(let j = 1; j <=i; j++){
+//         if(i %j === 0){
+//             count++;
+//         }
+//     }
+// }
+// if(count===2){
+//     console.log("Number is Prime")
+// }
+// else{
+//     console.log("Number is not Prime")
+// }
+
+
 //todo Prime numbers are numbers that have only 2 factors: 1 and themselves.
 //? All prime numbers greater than 2 are odd.
-//? However, not all odd numbers are prime.
 
-//! 3: Write a program to check if a number is positive, negative, or zero.
+// let num = 7;
+// let count;
+// for(let i = 2;i<=num;i++){
+//      count = 0;
+//     for(let j = 1; j <=i; j++){
+//         if(i %j === 0){
+//             count++;
+//         }
+//     }
+//     if(count===2 && i%2!=0){
+//         console.log(i)
+//     }
+// }
+
 
 //* ===============================
 //* Switch Statement
@@ -100,6 +114,24 @@ else{
 
 //! Write a JavaScript switch statement that takes a variable areaOfShapes representing different shapes, and based on its value, calculates and logs the area of the corresponding shape. Consider three shapes: 'Rectangle,' 'Circle,' and 'Square.' For 'Rectangle,' use variables a and b as the sides; for 'Circle,' use a variable r as the radius; and for 'Square,' use variable a as the side length. If the provided shape is not recognized, log a message saying, 'Sorry the shape is not available.' Test your switch statement with areaOfShapes set to 'Square' and sides a and b set to 5 and 10, respectively. Ensure that the correct area (25 in this case) is logged to the console.
 
+// var areaOfShapes = 'square';
+// let a = 3, b = 4;
+// let result;
+// switch(areaOfShapes){
+//     case 'square':
+//         result = a * b;
+//         console.log(result);
+//         break;
+//     case 'Circle':
+//         var r = 7;
+//         result = 3.142 * (r * r);
+//         console.log(result);
+//         break;
+//     default:
+//         result = 'Shape Not Found';
+// }
+
+
 //* ===============================
 //* While Loop
 //* ===============================
@@ -112,8 +144,21 @@ else{
 
 //* Simple while loop to count from 1 to 10 🧑‍💻
 
+
+// let i = 0;
+// while(i<=10){
+//     console.log(i)
+//     i++
+// }
+
 //! practice 🧑‍💻
 //? let's create a table of 5
+
+// let i = 1;
+// while(i<=10){
+//     console.log(5*i)
+//     i++
+// }
 
 //* ===============================
 //* Do-While Loop
@@ -126,6 +171,12 @@ else{
 // } while (condition);
 
 //* Simple do...while loop to count from 1 to 10 🧑‍💻
+
+// let i = 0;
+// do{
+//     console.log(i)
+//     i++;
+// }while(i<=10)
 
 //? Common Use Cases:
 // When you want to guarantee the execution of the loop body at least once.
@@ -148,6 +199,10 @@ else{
 
 //* Simple for loop to count from 1 to 10
 
+// for(let i = 0; i <= 10; i++) {
+//     console.log(i)
+// }
+
 //? Key Point:
 // The initialization, condition, and iteration expressions are optional. You can omit any or all of them, but you must include the semicolons.
 //* The code for (;;) {} represents an infinite loop in JavaScript. This construct is commonly used when you want a loop to run indefinitely or until a break statement is encountered within the loop. It's equivalent to while (true) {}.
@@ -167,10 +222,29 @@ else{
 //! practice :
 //! Calculate the sum of numbers from 1 to 10 using a for loop 🧑‍💻
 
+// let sum = 0;
+// for(let i = 0; i <= 10; i++) {
+//     sum += i;
+// }
+// console.log(sum)
+
 //! Generating a Times Table:🧑‍💻
 //! Example 3: Generating a times table of 5 with a for loop.
+// for(let i = 1; i <= 10; i++){
+//     console.log(5*i)
+// }
 
 //! Homework ➡️ JavaScript program to print table for given number (8,9,12,15) using for Loop?
 
 //? More Practice
 //!1: program To check if a year is a leap year🧑‍💻
+
+// function leapYear(year){
+//     if(year%4===0 || year%400===0){
+//         console.log("A leap Year");
+//     }
+//     else{
+//         console.log("Not a leap year");
+//     }
+// }
+// leapYear(2004);

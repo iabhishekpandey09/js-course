@@ -31,6 +31,11 @@
 //! Practice Time
 //! 1. Write a function to find the sum of two numbers.
 
+// function Sum (a,b){
+//     console.log(a+b)
+// }
+// Sum(5,7)
+
 //todo Tips "1st declare the function & then call it" In JavaScript, it's a good practice to declare (define) your functions before you call them. This ensures that the function is available for use when you try to call it.
 
 // Function definition
@@ -63,6 +68,11 @@
 
 //! 1. Write a function to find the sum of two numbers with parameters.
 
+// function Sum (a,b){
+//     console.log(a+b)
+// }
+// Sum(5,7)
+
 //* ==============================
 //* Function expressions
 //* ==============================
@@ -83,6 +93,12 @@
 
 //! Example 1: Returning a Sum of two number
 
+// let Sum = function(a,b){
+//     return a+b;
+// }
+// console.log(Sum(5,7))
+
+
 //* ==============================
 //* IIFE - immediately invoked function expression
 //* =============================
@@ -100,8 +116,50 @@
 //! Question 1: Calculator Function
 //! Write a JavaScript function calculator that takes two numbers and an operator as parameters and returns the result of the operation. The function should support addition, subtraction, multiplication, and division.
 
+// const Calculator=(char,a,b)=>{
+//     switch (char) {
+//         case '+':
+//             return a + b;
+//             case '-':
+//                 return a - b;
+//                 case '*':
+//                     return a * b;
+//                     case '/':
+//                         return a/b;
+//                         default:
+//                             return "Invalid operator";
+//     }
+// }
+// let result=Calculator('*',15,3)
+// console.log(result);
+
 //! Reverse a String:
 //! Write a function to reverse a given string without using built-in reverse methods.
 
+// let rev = "";
+// let reverse = (str)=>{
+//     for(let i = str.length-1; i>= 0; i--) {
+//         rev+=str[i];
+//     }
+//     return rev;
+// }
+// let str = "car"
+// console.log(reverse(str))
+
 //! Palindrome Check:
 //! Create a function to determine if a given string is a palindrome (reads the same backward as forward).
+
+// let rev = "";
+// let reverse = (str)=>{
+//     for(let i = str.length-1; i>= 0; i--) {
+//         rev+=str[i];
+//     }
+//     if(str.toLowerCase === rev.toLowerCase){
+//         return true;
+//     }
+//     else{
+//         return false
+//     }
+// }
+// let str = "Mom"
+// console.log(reverse(str))
